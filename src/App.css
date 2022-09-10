@@ -1,38 +1,117 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  margin: 100px auto;
+  width: 600px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  width: 100%;
+	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+  transition: all 0.4s ease 0s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li:not(:last-child){
+  margin: 0px 0px 10px 0px;
+}
+
+li p strong {
+  margin: 0px 10px;
+}
+
+li p input {
+  margin: 0px 10px 0px 0px;
+}
+
+.delete{
+  color: red;
+  cursor: pointer;
+  font-size: 30px;
+  margin: -5px 10px 0px 0px;
+}
+
+input:checked + span {
+  text-decoration: line-through;
+}
+
+
+
+.add-todo{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.input {
+  display: inline;
+  font-size: 20px;
+  line-height: calc(40/20*100%);
+  padding: 5px 10px;
+	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	border: 1px solid #ccc;
+  width: 300px;
+	background: #F6F6f6;
+	border-radius: 8px;
+  transition: all 0.2s ease 0s;
+}
+
+
+.input:focus {
+  color: #212529;
+  border-color: #bdbdbd;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.btn {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	outline: none;
+  padding: 5px 20px;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	height: 46px;
+  line-height: calc(40/20*100%);
+	font-size: 20px;
+	font-weight: 500;
+	color: #444;
+	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	cursor: pointer;
+	transition: box-shadow 0.2s;
+}
+
+.btn:focus-visible {
+	border: 1px solid #4c51f9;
+	outline: none;
+}
+.btn:hover, .input:hover {
+	transition: all 0.2s;
+	box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+.btn:active {
+	background-color: #808080;
 }
