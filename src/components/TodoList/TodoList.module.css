@@ -1,0 +1,12 @@
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}   
+

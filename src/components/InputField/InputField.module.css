@@ -1,0 +1,48 @@
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0px;
+}
+
+input[type='text'] {
+    border: 1px solid #cccccc; 
+    border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    -khtml-border-radius: 3px; 
+    background: #A8D2A5 !important;
+    outline: none; 
+    height: 36px; 
+    width: 100%;
+    color: #3E3B3B;
+    font-size: 16px;
+    padding: 5px 0.5rem;
+    box-shadow: 5px 10px 5px rgba(142, 170, 179, 0.53);
+}
+
+.btn{
+    background: linear-gradient(90deg, #A8D2A5 0%, #ACD4E1 115.2%);
+    border: none;
+    padding: 10px 30px;
+    color: #3E3B3B;
+    font-size: 20px;
+    line-height: calc(32/16*100%);
+    border-radius: 20px; 
+    -webkit-border-radius: 20px; 
+    -moz-border-radius: 20px; 
+    -khtml-border-radius: 20px; 
+    box-shadow: 0px 4px 4px #ACD4E1;
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover{
+    transition: all 0.3s ease 0s;
+    transform: scale(1.08);
+}
+
+.btn:focus{
+    
+}

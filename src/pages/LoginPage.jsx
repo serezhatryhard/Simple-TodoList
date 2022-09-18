@@ -1,17 +1,18 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { Login } from '../components/Auth/Login'
+import Login from '../components/AuthForm/Login'
+import Register from '../components/AuthForm/Register'
 
 const LoginPage = () => {
-  return (
-    <div>
-        <h1>Login Page</h1>
-        <Login />
-        <p>
-            or <NavLink to='/register'>Register</NavLink>
-        </p>
-    </div>
-  )
+
+
+    return (
+        <div>
+            <Login />
+
+            or <NavLink to='/register'>Sign Up</NavLink>
+        </div>
+    )
 }
 
 export default LoginPage
